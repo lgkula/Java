@@ -2,7 +2,40 @@ package com.tools;
 
 public class Blackjack {
     public int parseCard(String card) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
+//        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
+    if(card.equals("ace")) {
+        return 11;
+    }
+    else if(card.equals("ten") || card.equals("jack") || card.equals("queen") || card.equals("king")) {
+        return 10;
+    }
+    else if(card.equals("nine")) {
+        return 9;
+    }
+    else if(card.equals("eight")) {
+        return 8;
+    }
+    else if(card.equals("seven")) {
+        return 7;
+    }
+    else if(card.equals("six")) {
+        return 6;
+    }
+    else if(card.equals("five")) {
+        return 5;
+     }
+    else if(card.equals("four")) {
+        return 4;
+    }
+    else if(card.equals("three")) {
+        return 3;
+    }
+    else if(card.equals("two")) {
+        return 2;
+    }
+    else {
+        return 0;
+    }
     }
 
     public boolean isBlackjack(String card1, String card2) {
