@@ -1,6 +1,7 @@
 package com.tools;
 
 public class AnnalynsInfiltration {
+
     public static boolean canFastAttack(boolean knightIsAwake) {
         // throw new UnsupportedOperationException("Please implement the (static) AnnalynsInfiltration.canFastAttack() method");
         if(knightIsAwake == false) {

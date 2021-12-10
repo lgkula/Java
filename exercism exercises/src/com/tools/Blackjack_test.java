@@ -6,6 +6,17 @@ public class Blackjack_test {
     public String[] karty = {"ace", "ten", "jack", "queen", "king", "nine", "eight", "seven", "six", "five", "four", "three", "two", "other"};
     public void blackJackTestFunction() {
         Blackjack blackjack = new Blackjack();
+        System.out.println("parseCard");
+        for (String podana_karta : karty) {
+            System.out.println(podana_karta + " " + blackjack.parseCard(podana_karta));
+        }
+        System.out.println("");
+        System.out.println("parseCard1");
+        for (String podana_karta : karty) {
+            System.out.println(podana_karta + " " + blackjack.parseCard1(podana_karta));
+
+
+        Blackjack blackjack = new Blackjack();
         Random random = new Random();
         int licznik = 0;
         for(int i=1; i < 10000; i++) {
