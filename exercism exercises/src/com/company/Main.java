@@ -31,6 +31,7 @@ public class Main {
         for (String podana_karta : karty) {
             System.out.println(podana_karta + " " + blackjack.parseCard(podana_karta));
             }
+        System.out.println("");
         System.out.println("parseCard1");
         for (String podana_karta : karty) {
             System.out.println(podana_karta + " " + blackjack.parseCard1(podana_karta));
