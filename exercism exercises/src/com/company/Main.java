@@ -27,8 +27,13 @@ public class Main {
 //        System.out.println(test("as"));
         String[] karty = {"ace", "ten", "jack", "queen", "king", "nine", "eight", "seven", "six", "five", "four", "three", "two", "other"};
         Blackjack blackjack = new Blackjack();
+        System.out.println("parseCard");
         for (String podana_karta : karty) {
             System.out.println(podana_karta + " " + blackjack.parseCard(podana_karta));
+            }
+        System.out.println("parseCard1");
+        for (String podana_karta : karty) {
+            System.out.println(podana_karta + " " + blackjack.parseCard1(podana_karta));
         }
     }
 }
