@@ -118,7 +118,28 @@ public class Main {
         }
         return fubinaciNumbers;
     }
-
+    public static int[] listSortFunction() {
+        int[] numberList = {2, 3, 5, 8, 9, 4, 9, 4, 9, 1, 3,6,8,7,2};
+        boolean changeNumber = false;
+        do {
+            changeNumber = false;
+            for (int i = 0; i < numberList.length-1; i++) {
+            if(numberList[i] > numberList[i + 1]) {
+                int a = numberList[i + 1];
+                numberList[i + 1] = numberList[i];
+                numberList[i] = a;
+                changeNumber = true;
+            }
+            }
+        } while(changeNumber);
+//    for(int i=0; i<numberList.length; i++) {
+//        System.out.print(numberList[i] + ", ");
+//    }
+        for(int names: numberList) {
+            System.out.print(names + ", ");
+        }
+        return numberList;
+    }
 
     public static void main(String[] args) {
 //	    System.out.println("Zwrócona wartość " + zadanie1(2));
@@ -128,7 +149,8 @@ public class Main {
 //        zadanie5("dkjhuiahklhali klahuaahkalajiokjhu", "as");
 //    zadanie6();
 //    System.out.println(zadanie7());
-        zadanie8();
+//        zadanie8();
         //fubinaciNumbersFunction(5);
+        listSortFunction();
     }
 }

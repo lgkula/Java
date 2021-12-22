@@ -24,6 +24,9 @@ public class Main {
 //    String redaktorImie = redaktor.nextLine();
 //    System.out.println("Podane imie to " + redaktorImie);
 
+        Scanner redaktor = new Scanner(System.in);
+        System.out.print("Podaj imie: ");
+        String redaktorImie = redaktor.nextLine();
+        System.out.println(redaktorImie);
     }
-
-}
+    }
