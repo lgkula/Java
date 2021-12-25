@@ -1,7 +1,6 @@
 package com.tools;
 
 public class Blackjack {
-    public String[] karty = {"ace", "ten", "jack", "queen", "king", "nine", "eight", "seven", "six", "five", "four", "three", "two", "other"};
 
     public int parseCard(String card) {
 //        throw new UnsupportedOperationException("Please implement the Blackjack.parseCard method");
