@@ -26,7 +26,6 @@ public class Main {
 //        AnnalynsInfiltration wynik = new AnnalynsInfiltration();
 //        System.out.println("wynik = " + wynik);
 //        System.out.println(test("as"));
-        String[] karty = {"ace", "ten", "jack", "queen", "king", "nine", "eight", "seven", "six", "five", "four", "three", "two", "other"};
 //        Blackjack blackjack = new Blackjack();
 //        System.out.println("parseCard");
 //        for (String podana_karta : karty) {
@@ -42,8 +41,8 @@ public class Main {
         for(int i=1; i < 10000; i++) {
         int los1 = random.nextInt(13);
         int los2 = random.nextInt(13);
-        String card1 = karty[los1];
-        String card2 = karty[los2];
+        String card1 = blackjack.karty[los1];
+        String card2 = blackjack.karty[los2];
         System.out.println("Losowanie nr: " + i);
         System.out.println("Karta 1 to: " + card1 + "Punkty: " + blackjack.parseCard(card1));
         System.out.println("Karta 2 to: " + card2 + "Punkty: " + blackjack.parseCard(card2));
