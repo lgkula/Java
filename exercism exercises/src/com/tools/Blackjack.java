@@ -88,15 +88,20 @@ public class Blackjack {
     }
 
     public String largeHand(boolean isBlackjack, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
-        if(isBlackjack == false) {return "S";}
+//        throw new UnsupportedOperationException("Please implement the Blackjack.largeHand method");
+//        dla handScore > 20
+        if(isBlackjack == false) {return "P";}
         else if(isBlackjack == true && dealerScore < 10) {return "W";}
         else if(isBlackjack == true && dealerScore >= 10) {return "S";}
-        return "";
+        return "S";
     }
 
     public String smallHand(int handScore, int dealerScore) {
-        throw new UnsupportedOperationException("Please implement the Blackjack.smallHand method");
+//        throw new UnsupportedOperationException("Please implement the Blackjack.smallHand method");
+    if(handScore >= 17) {return "S";}
+    else if (handScore >= 12 && handScore <= 16 && dealerScore >= 7) {return "H";}
+    else if (handScore >= 12 && handScore <= 16) {return "S";}
+    else {return "H";}
     }
 
     // FirstTurn returns the semi-optimal decision for the first turn, given the cards of the player and the dealer.
